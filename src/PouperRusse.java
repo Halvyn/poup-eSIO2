@@ -16,18 +16,43 @@ public class PouperRusse {
         this.p=null;
     }
 
-    public boolean Ouverte(){
+    public void Ouverte(){
         this.ouverte=true;
     }
 
-    public boolean Fermer(){
+    public void Fermer(){
         this.ouverte=false;
-        .
+    }
+
+    void PlacerDans(PouperRusse p){
+        if (p.taille > this.taille) {
+            System.out.println("Erreur");
+        }
+
+        else{
+            this.p=p;
+        }
     }
 
 
+    public PouperRusse SortirDe(PouperRusse p){
+
+        if (this.p ==  null) {
+            System.out.println("Erreur");
+            return null;
+        }
+
+        else{
+
+            PouperRusse p2 = this.p;
+            this.p = null ;
+            return  p2;
+        }
+
+    }
 
 }
+
 
 
 
