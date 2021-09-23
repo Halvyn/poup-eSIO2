@@ -22,6 +22,7 @@ public class PouperRusse {
 
     public boolean Fermer(){
         this.ouverte=false;
+        .
     }
 
 
