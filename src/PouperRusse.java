@@ -13,6 +13,7 @@ public class PouperRusse {
 
     private void PouperRusse(int taille) {
         this.taille=taille;
+        this.ouverte=false;
         this.p=null;
     }
 
@@ -30,7 +31,9 @@ public class PouperRusse {
         }
 
         else{
+            Ouverte();
             this.p=p;
+            Fermer();
         }
     }
 
@@ -44,8 +47,10 @@ public class PouperRusse {
 
         else{
 
+            Ouverte();
             PouperRusse p2 = this.p;
             this.p = null ;
+            Fermer();
             return  p2;
         }
 
