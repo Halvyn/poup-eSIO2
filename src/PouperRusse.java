@@ -4,9 +4,31 @@ public class PouperRusse {
     private PouperRusse p;
     public boolean ouverte;
 
-    public PouperRusse(int taille, PouperRusse p, boolean ouverte) {
+    public PouperRusse(int taille, PouperRusse p) {
         this.taille = taille;
         this.p = p;
-        this.ouverte = ouverte;
+        this.ouverte=false;
+
     }
+
+    private void PouperRusse(int taille) {
+        this.taille=taille;
+        this.p=null;
+    }
+
+    public boolean Ouverte(){
+        this.ouverte=true;
+    }
+
+    public boolean Fermer(){
+        this.ouverte=false;
+    }
+
+
+
 }
+
+
+
+
+
